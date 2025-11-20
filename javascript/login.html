@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/registrar.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Login</title>
+
+</head>
+
+<body>
+    <main>
+        <div id="formulario">
+            <h1>Loguea en tu cuenta</h1>
+            <p>¿No tienes una cuenta? <a href="registrar.html">Registrate</a></p>
+            <form>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" value="" pattern="(?=.*[@]).{1,30}"
+                oninvalid="this.setCustomValidity('Incluye un signo &#x22;@&#x22; en la dirección de correo electrónico.')" oninput="setCustomValidity('')"
+                required><br>
+                <label for="contrasena">Contraseña</label><br>
+                <input type="password" id="contrasena" name="contrasena" value="" pattern=".{1,9}" 
+                oninvalid="this.setCustomValidity('La contraseña debe contener 9 caracteres como máximo')" oninput="setCustomValidity('')" required><br>
+                <input type="submit" value="Submit"><br>
+                <a href="index.html">Cancelar</a>
+            </form>
+        </div>
+    </main>
+</body>

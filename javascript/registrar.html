@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/registrar.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Registrar</title>
+
+	
+
+</head>
+
+<body>
+    <header>
+		<a href="#formulario">Saltar a...</a>
+		<!-- Logo -->
+		<div id="logo">
+			<a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+		</div>
+
+		<!-- navegacion -->
+		<div id="nav">
+			<a class="coches" href="">Coches</a>
+			<a class="motos" href="">Motos</a>
+		</div>
+		
+		<!-- Loguear y registrar -->
+		<div id="logReg">
+			<a class="registrar" href="registrar.html">Registrar</a> 
+			<a class="login" href="login.html">Login</a> 
+		</div>
+	</header>
+
+    <main>
+        <div id="portada">
+            <h1>Crea tu cuenta</h1>
+            <p>Crea tu cuenta para comprar los mejores coches y motos en España!</p>
+            <p>Si tienes una cuenta, por favor, logueate aquí <a href="login.html">Login</a></p>
+        </div>
+        <div id="formulario">
+            <h1>Datos</h1>
+            <form>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" class="field_error" name="email" value=""><br>
+				<div id="email_error" class="text_error"></div>
+                <label for="contrasena">Contraseña</label><br>
+                <input type="text" id="contrasena" name="contrasena" value=""><br>
+				<div id="contrasena_error" class="text_error"></div>
+                <label for="sexo">Sexo</label><br>
+                <select id="sexo" name="sexo">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select><br>
+				<div id="sexo_error" class="text_error"></div>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre" value=""><br>
+				<div id="nombre_error" class="text_error"></div>
+                <label for="apellido">Apellido</label><br>
+                <input type="text" id="apellido" name="apellido" value=""><br>  
+				<div id="apellido_error" class="text_error"></div>
+                <label for="dni">dni</label><br>
+                <input type="text" id="dni" name="dni" value=""><br>
+				<div id="dni_error" class="text_error"></div> 
+                <p>¿Qué pretendes comprar?</p><br>
+                <input type="checkbox" id="coche" name="vehiculos[]" value="Coche">
+                <label for="coche"> Coche</label><br>
+                <input type="checkbox" id="moto" name="vehiculos[]" value="Moto">
+                <label for="moto"> Moto</label><br>
+				<div id="vehiculos_error" class="text_error"></div> 
+                <input type="submit" value="Submit"><br>
+                <a href="index.html">Cancelar</a>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+		<!-- Sitios del pie de pagina -->
+		<div id="sites">
+			<ul>
+				<li><h1>Herramientas de compra</h1></li>
+				<li><a href="">Buscar un vehículo</a></li>
+				<li><a href="">Conseguir seguro</a></li>
+				<li><a href="">Opiniones</a></li>
+				<li><a href="">Guía</a></li>
+			</ul>
+
+			<ul>
+				<li><h1>Para distribuidores</h1></li>
+				<li><a href="">Anúnciate con nosotros</a></li>
+				<li><a href="js/clases/index.html">Descubrir nuestro sitio</a></li>
+				<li><a href="">Iniciar sesión</a></li>
+			</ul>
+
+			<ul>
+				<li><h1>Sobre nosotros</h1></li>
+				<li><a href="">Contactar con nosotros</a></li>
+				<li><a href="">Nuestro blog</a></li>
+				<li><a href="">Comprar desde casa</a></li>
+				<li><a href="">Carreras</a></li>
+				<li><a href="">Sobre autos.es</a></li>
+			</ul>
+		</div>
+		<!-- Terminos -->
+		<div id="terms">
+			<p>autos.es</p>
+			<p id="tiempo"></p>
+		</div>
+	</footer>
+	
+	<script src="js/app2.js">
+		
+		
+	</script>
+
+<script src="js/app3.js">
+		
+		
+</script>
+
+	
+</body>
+
+</html>

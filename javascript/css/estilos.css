@@ -1,0 +1,318 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: center;
+        
+    font-family: "Open Sans", sans-serif;
+        
+}
+
+header { grid-area: header; }
+main { grid-area: main; }
+footer { grid-area: footer; }
+
+/* Estilos del body */
+body {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+    gap: 50px;
+
+
+}	
+
+
+/* Estilos del header */
+header {
+      background-color:white;
+      display:flex;
+      flex-direction: row;
+      
+      
+      /*CENTRADO VERTICALMENTE*/
+      justify-content: center;
+      align-items: center;
+}
+
+header div{
+        background-color:white;
+        
+        height: 50px;
+}
+
+/* Estilos del logo */
+#logo{
+    width: 25%;
+}
+
+#logo img{
+    height: 50px;
+}
+
+/* Estilos del navegacion */
+#nav{
+    width: 25%;
+    margin-top: 20px;
+}
+
+.coches {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    
+    border: none;
+    border-radius: 5px;
+
+    height: 50px;
+
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.motos {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    
+    border: none;
+    border-radius: 5px;
+
+    height: 50px;
+
+
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.coches:hover {
+    border-bottom: solid;
+    border-bottom-color: yellow;
+}
+
+.motos:hover {
+    border-bottom: solid;
+    border-bottom-color: yellow;
+}
+
+
+/* Estilos del loguear y registrar */
+#logReg{
+    width: 50%;
+    border-left: black 1px solid;
+    margin-top: 20px;
+    
+}
+
+.registrar {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    
+    border: orange 2px solid;
+    border-radius: 5px;
+
+    height: 50px;
+    width: 150px;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.registrar:hover {
+    background-color: chocolate;
+}
+
+.login {
+    background-color: white;
+    color: orange;
+    padding: 10px 20px;
+    text-decoration: none;
+
+   
+    border: orange 2px solid;
+    border-radius: 5px;
+
+    height: 50px;
+    width: 150px;
+
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .login:hover {
+    background-color: white;
+}
+
+
+/* Estilos del footer */
+footer > div{
+    background-color: black;
+    color: white;
+}
+
+/* Estilos del sitios del pie de pagina */
+#sites{
+    border-top: lawngreen 2px solid;
+    display:flex;
+    flex-direction: row;
+
+}
+
+#sites ul {
+    list-style: none;
+    display: block;
+    float: left;
+    margin: 75px;
+}
+
+#sites h1 {
+    font-weight: 100;
+    margin-bottom: 0;
+    cursor:default;
+}
+
+#sites a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#sites a {
+    color: gray;
+    text-decoration: none;
+}
+
+/* Estilos de los terminos del pie de pagina */
+#terms{
+    border-top: gray 1px solid;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#terms p:nth-child(2){
+    padding-left: 50px;
+}
+
+/* Estilos del mejor coche */
+#mejorCoche{
+    display:flex;
+    flex-direction: row;
+
+    /*CENTRADO VERTICALMENTE*/
+    justify-content: center;
+    align-items: center;
+
+    border-left: blue 5px solid;
+    border-radius: 5px;
+
+    margin-left: 10px;
+}
+
+/* Estilos del imagen del mejor coche */
+#mejorCocheIamge img{
+    height: 300px;
+}
+
+/* Estilos de los coches populares */
+#coches{
+    display:flex;
+    flex-direction: row;
+}
+
+#coches ul {
+    list-style: none;
+    display: block;
+    float: left;
+    margin: 75px;
+
+    cursor: default;
+}
+
+#coches form{
+    background-color: grey;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+#coches fieldset{
+    border: none;
+    border-top:black 1px solid;
+}
+
+#coches legend{
+
+    color: green;
+    margin-left: 50%;
+
+}
+
+/* Estilos del mejor moto */
+#mejorMoto{
+    display:flex;
+    flex-direction: row;
+
+    /*CENTRADO VERTICALMENTE*/
+    justify-content: center;
+    align-items: center;
+
+    border-left: orange 5px solid;
+    border-radius: 5px;
+
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* Estilos del imagen del mejor moto */
+#mejorMotoIamge img{
+    height: 300px;
+}
+
+/* Estilos de los motos populares */
+#motos{
+    display:flex;
+    flex-direction: row;
+}
+
+#motos ul {
+    list-style: none;
+    display: block;
+    float: left;
+    margin: 75px;
+
+    cursor: default;
+}
+
+#motos form{
+    background-color: grey;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+#motos fieldset{
+    border: none;
+    border-top:black 1px solid;
+}
+
+#motos legend{
+
+    color: green;
+    margin-left: 50%;
+
+}

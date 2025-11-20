@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $("body").hide().fadeIn(5000);
+    });
+  </script>
+  <title>Información de la Empresa</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      padding: 10px;
+      text-align: center;
+      color: black;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-empresa {
+      margin-bottom: 20px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    #vehiculos-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .vehiculo {
+      flex: 1 0 20%;
+      margin: 10px;
+      padding: 15px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: right;
+    }
+
+    .vehiculo p {
+      margin: 5px 0;
+    }
+
+    .vehiculo strong {
+      font-weight: bold;
+    }
+
+    .botones-container {
+      text-align: center;
+    }
+
+    button {
+      background-color: white;
+      color: black;
+      border: black 1px solid;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Información de la Empresa</h1>
+  </header>
+
+  <section class="info-empresa">
+    <h2>Datos de la Empresa</h2>
+    <p><span class="bold">Nombre</span>: <span id="nombreEmpresa"></span></p>
+    <p><span class="bold">Localidad</span>: <span id="localidad"></span></p>
+  </section>
+
+  <div class="botones-container">
+    <button id="mostrarTodos">Mostrar Todos</button>
+    <button id="ordenarPorId">Ordenar por id</button>
+    <button id="mostrarPorPrecio">Vehiculos por precio(min,max)</button>
+    <button id="mostrarCoches">Mostrar Coches</button>
+  </div>
+
+  <section>
+    <h2>Vehiculos</h2>
+    <div id="vehiculos-container"></div>
+  </section>
+
+  <script type="module" src="app.js">
+
+  </script>
+
+</body>

@@ -1,0 +1,57 @@
+
+main{
+    display:flex;
+    flex-direction: column;
+      
+      
+    /*CENTRADO VERTICALMENTE*/
+    justify-content: center;
+    align-items: center;
+}
+
+#portada{
+    background-color: black;
+    color: white;
+    width: 90%;
+}
+
+#portada a{
+    color: rgb(167, 208, 244);
+}
+
+#formulario{
+    width: 90%;
+}
+
+#formulario input[type=text],input[type=password]{
+    width: 350px;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+#formulario input[type=submit] {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#formulario select {
+    width: 350px;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+.text_error {
+    color: red;
+}
